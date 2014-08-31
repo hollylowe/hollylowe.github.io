@@ -17,13 +17,6 @@
 @import url("font-awesome.css");			/* Font Awesome */
 @import url("font-awesome-ie7.css");		/* Font Awesome */
 
-@font-face {
-	font-weight: normal;
-	font-style: normal;
-	font-family: 'Bebas';
-	src:url('../font/Bebas/BEBAS__.ttf');
-	
-}
 
 /* Colors Section
 =================================================================== */
@@ -517,7 +510,7 @@ header {
 
 #page-title h2 {
 	display: inline-block;
-	font-family: "Bebas" !important;
+	font-family: 'Oswald', sans-serif !important;
 	color: #fff;
 	font-size: 36px;
 	text-align: center;
@@ -714,7 +707,7 @@ header {
 /* button section */
 
 #education {
-	font-family: "Bebas" !important;
+	font-family: 'Oswald', sans-serif !important;
 }
 
 /* Flexslider
@@ -2724,7 +2717,8 @@ footer #contents {
 	
 }
 #education h4, #work h4, #resume h4, #san h4{
-	font-family: "Bebas";
+	
+	font-family: 'Oswald', sans-serif;
 	font-size: 60px; 
 	line-height: 44px; 
 	padding-top: 15%;
