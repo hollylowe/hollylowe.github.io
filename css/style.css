@@ -17,6 +17,14 @@
 @import url("font-awesome.css");			/* Font Awesome */
 @import url("font-awesome-ie7.css");		/* Font Awesome */
 
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Bebas';
+	src:url('../font/Bebas/BEBAS__.ttf');
+	
+}
+
 /* Colors Section
 =================================================================== */
 .color.white {
