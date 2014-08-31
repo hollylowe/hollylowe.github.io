@@ -1,0 +1,67 @@
+/* Social Icons - small
+=================================================================== */
+
+#social a {
+	width: 28px;
+	height: 28px;
+	margin: 0 6px 6px 0;
+	display: block;
+	float: left;
+	text-indent: -9999px;
+	background-position: 0 0px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#social a:hover {
+	width: 28px;
+	height: 28px;
+	margin: 0 6px 6px 0;
+	display: block;
+	float: left;
+	text-indent: -9999px;
+	background-position: 0 -38px;
+}
+
+#social a img{
+	border: none;
+}
+
+#social-r a {
+	width: 28px;
+	height: 28px;
+	margin: 0 6px 6px 0;
+	display: block;
+	float: left;
+	text-indent: -9999px;
+	background-position: 0 -38px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#social-r a:hover {
+	width: 28px;
+	height: 28px;
+	margin: 0 6px 6px 0;
+	display: block;
+	float: left;
+	text-indent: -9999px;
+	background-position: 0 0px;
+}
+
+#social-r a img{
+	border: none;
+}
+
+
+.github {background: url(../img/icons/social/github.png) no-repeat;}
+.email {background: url(../img/icons/social/email.png) no-repeat;}
+.linkedin {background: url(../img/icons/social/linkedin.png) no-repeat;}
+
+
