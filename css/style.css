@@ -2711,9 +2711,9 @@ footer #contents {
 
 }
 #education h6, #work h6, #san h6{
-	font-family: "lora";
+	font-family: 'Roboto Slab', serif;
 	font-size: 36px; 
-	line-height: 60px;
+	line-height: 75px;
 	
 }
 #education h4, #work h4, #resume h4, #san h4{
@@ -2725,13 +2725,13 @@ footer #contents {
 }
 
 #education p, #work p{
-	font-family: "lora";
+	font-family: 'Roboto Slab', serif;
 	font-size: 22px; 
-	line-height: 7px;
+	line-height: 0px;
 }
 
 #resume p{
-	font-family: "lora";
+	font-family: 'Roboto Slab', serif;
 	font-size: 22px; 
 	line-height: 70px;
 }
