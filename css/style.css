@@ -1952,6 +1952,7 @@ footer #social {
 	display: inline-block;
 	text-align: center;
 	margin-top: 9px;
+	padding-left: 10px; 
 
 	/*padding-bottom: 20px; */
 
@@ -1969,7 +1970,7 @@ footer #contents {
 
 #contents {
 	display: inline-block;
-	width: 365px; 
+	/*width: 365px; */
 }
 
 
@@ -2682,6 +2683,11 @@ footer #contents {
 	#about {
 		margin-bottom: 20%; 
 	}
+	footer #social {
+		display: block; 
+		margin: 0px auto 0px auto;
+		width: 80px; 
+	}
 }
 
 
@@ -2836,6 +2842,7 @@ footer #contents {
 
 
 
+	
 
 
 
