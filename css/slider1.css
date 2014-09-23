@@ -245,7 +245,7 @@
 .demo-1 .sl-slide blockquote p{
 	margin: 0 auto;
 	width: 60%;
-	max-width: 350px;
+	max-width: 400px;
 	position: relative;
 }
 
@@ -613,5 +613,5 @@
 }
 
 blockquote p {
-	padding-left: 3px;
+	padding-left: 12px;
 }
