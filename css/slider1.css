@@ -611,3 +611,7 @@
 	}
 
 }
+
+blockquote p {
+	padding-left: 3px;
+}
