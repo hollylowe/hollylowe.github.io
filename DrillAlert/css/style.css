@@ -1,0 +1,461 @@
+/* ==================================================
+   CSS Imports
+================================================== */
+
+@import url("reset.css");
+@import url("owlcarousel.css");
+@import url("columns.css");
+@import url("typography.css");
+
+/* ==================================================
+   Icon Fonts
+================================================== */
+
+@import url("fonts/fontawesome/font-awesome.css");
+
+/* ==================================================
+   Google Fonts
+================================================== */
+
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic");
+@import url("http://fonts.googleapis.com/css?family=Fira+Sans:300,300italic,400,400italic,500,500italic,700,700italic");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400");
+
+/* ==================================================
+   Global Styles
+================================================== */
+
+*
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html
+{
+	height: 100%;
+	overflow: auto;
+	
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body
+{
+	background: #FFF;
+	overflow-y: hidden;
+	
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+}
+
+/* ==================================================
+   Images
+================================================== */
+
+img
+{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+img.imgright
+{
+	float: right;
+	width: 100%;
+	max-width: 300px;
+	margin: 0 0 20px 20px;
+}
+
+img.imgleft
+{
+	float: left;
+	width: 100%;
+	max-width: 300px;
+	margin: 0 20px 20px 0;
+}
+
+/* ==================================================
+   Background Colours
+================================================== */
+
+.colour1
+{
+	background: #FF4256;
+}
+
+.colour2
+{
+	background: #F5F5F5;
+}
+
+/* ==================================================
+   Layout Styles
+================================================== */
+
+.container
+{
+	width: 100%;
+	min-width: 280px;
+	line-height: 26px;
+}
+
+	.container .bodycontainer
+	{
+		margin: 0 auto;
+		width: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+		max-width: 1040px;
+	}
+	
+	.container .fullbodycontainer
+	{
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+#pageslide
+{
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 999999;
+	overflow: auto;
+    width: 260px;
+    background: #222;
+    color: #FFF;
+	line-height: 26px;
+	font-size: 17px;
+}
+
+	#sidebar
+	{
+		display: none;
+		padding-top: 20px;
+	}
+	
+		#sidebar p.closebutton
+		{
+			float: left;
+			width: 100%;
+			padding-left: 20px;
+		}
+	
+			#sidebar p.closebutton a
+			{
+				float: left;
+				font-size: 26px;
+				color: #FF454A;
+				font-family: Open Sans;
+				
+				-webkit-border-radius: 6px;
+				-moz-border-radius: 6px;
+				border-radius: 6px;
+			}
+			
+				#sidebar p.closebutton a:hover
+				{
+					color: #FFF;
+				}
+			
+					#sidebar p.closebutton a span
+					{
+						display: block;
+					}
+					
+		#sidebar #mainmenu
+		{
+			margin: 0 0 20px 0;
+		}
+		
+			#sidebar #mainmenu ul
+			{
+				float: left;
+				width: 100%;
+				margin: 0;
+				list-style-type: none;
+			}
+			
+				#sidebar #mainmenu ul li
+				{
+					display: block;
+				}
+				
+					#sidebar #mainmenu ul li a
+					{
+						float: left;
+						width: 100%;
+						color: #FFF;
+						padding: 8px 20px 8px 20px;
+						font-weight: 300;
+						text-transform: uppercase;
+					}
+					
+						#sidebar #mainmenu ul li.active a
+						{
+							background: #292929;
+						}
+					
+						#sidebar #mainmenu ul li a span
+						{
+							display: block;
+							color: #FFF;
+							color: rgba(255, 255, 255, 0.5);
+							font-weight: 300;
+							font-size: 14px;
+							line-height: 18px;
+							text-transform: none;
+						}
+
+	
+/* ==================================================
+   Sections
+================================================== */
+
+.section
+{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#headercont
+{
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+	#headercont h1
+	{
+		float: left;
+		margin: 0 0 20px 0;
+		font-size: 60px;
+		line-height: 60px;
+		font-weight: 700;
+		letter-spacing: -1px;
+	}
+	
+		#headercont h1 span
+		{
+			display: block;
+			font-size: 30px;
+			line-height: 30px;
+			font-weight: 300;
+		}
+		
+			#headercont h1 a
+			{
+				color: #444;
+			}
+			
+	#headercont a.togglepanel
+	{
+		float: right;
+		color: #FFF;
+		background: #FF454A;
+		padding: 10px 12px;
+		font-size: 26px;
+		
+		-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		border-radius: 6px;
+	}
+	
+		#headercont a:hover.togglepanel
+		{
+			color: #FF454A;
+			background: #595F72;
+		}
+	
+			#headercont a.togglepanel span
+			{
+				display: block;
+			}
+			
+
+#gallerycont
+{
+	
+}
+
+	.bg1
+	{
+		background: url("../images/bg-1.jpg") no-repeat;
+		background-size: cover;
+	}
+
+#section1, #section2, #section3
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	
+	min-height: 300px;
+	height: auto !important;
+	height: 300px;
+}
+
+#footercont
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #999;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+	#footercont p
+	{
+		margin: 0;
+	}
+
+	#footercont a
+	{
+		color: #FF454A;
+	}
+	
+		#footercont a.scrolltop
+		{
+			font-size: 36px;
+		}
+	
+		#footercont #socialmedia ul
+		{
+			margin: 0 0 20px 0;
+		}
+
+		#footercont #socialmedia ul li
+		{
+			display: inline-block;
+			list-style-type: none;
+			margin: 0 0 0 20px;
+			padding: 0;
+		}
+
+			#footercont #socialmedia ul li a
+			{
+				font-size: 32px;
+				color: #FF454A;
+			}
+			
+				#footercont #socialmedia ul li a:hover
+				{
+					color: #999;
+				}
+
+/* ==================================================
+   Responsive Media Queries - Tablets
+================================================== */
+
+@media screen and (max-width: 768px)
+{
+	
+	img.imgright
+	{
+		float: none;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 20px 0;
+	}
+	
+	img.imgleft
+	{
+		float: none;
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 20px 0;
+	}
+	
+	#headercont h1
+	{
+		font-size: 50px;
+		line-height: 50px;
+		letter-spacing: -1px;
+	}
+	
+		#headercont h1 span
+		{
+			font-size: 25px;
+			line-height: 25px;
+		}
+	
+	#headercont a.togglepanel
+	{
+		clear: both;
+		float: left;
+	}
+	
+	#footercont
+	{
+		text-align: left;
+	}
+	
+	#headercont a.togglepanel
+	{
+		float: left;
+	}
+	
+	#footercont a.scrolltop
+	{
+		display: block;
+		margin: 0 0 20px 0;
+	}
+	
+	#footercont #socialmedia ul li
+	{
+		margin: 0 20px 0 0;
+	}
+	
+}
+
+/* ==================================================
+   Responsive Media Queries - Mobiles
+================================================== */
+
+@media screen and (max-width: 480px)
+{
+
+	
+
+}
+
+#teamNames {
+	text-align: center;
+	font-size: 16px; 
+}
+
+#teamPic {
+	min-width: 100%; 
+}
+
+
+#iOS-Screens .item{
+  margin: 12px;
+}
+#iOS-Screens .item img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#icon {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding: 20px;
+}
+
+#app-icon {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding: 32px;
+	border-radius: 50px; 
+
+}
+
+
+
