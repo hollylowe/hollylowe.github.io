@@ -98,6 +98,8 @@ app.controller('submitDancersCtrl', function($scope, $compile){
         var ChoreoForm = Parse.Object.extend("ChoreoForm");
         var query = new Parse.Query(ChoreoForm);
 
+        var arr = $('dancers').val().split(',');
+
         query.equalTo("Name", $('#choreoName').val());
         query.find({
           success: function(results) {
@@ -106,7 +108,7 @@ app.controller('submitDancersCtrl', function($scope, $compile){
                  var object = results[i];
               }
               if (object != undefined){
-                object.save('dancers', [4, 4,4]).then(function(object) {
+                object.save('dancers', arr).then(function(object) {
                           swal("Thank you!", "Your information has been submitted!", "success");
                         });
               }
