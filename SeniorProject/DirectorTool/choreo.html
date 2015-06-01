@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="choreo.css">
+    
+  </head
+
+<div class=".container">
+	<div id="outside">
+	
+	<div class="choreolist" ng-controller="ChoreoCtrl2" id="list-tool">
+		<div id="list-title">
+			<h3>Choreographers
+				<span id="export" class="glyphicon glyphicon-export" data-toggle="modal" data-target=".bs-example-modal-lg"></span>
+			</h3>
+		</div>
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg">
+		    <div class="modal-content" id="email-modal">
+		    	<div>
+		    		<span id="modal-titles">All choreographers</span>
+			    	<textarea type="textarea" rows="7" class="form-control" id="box1" readonly="readonly">{{emails}}</textarea>
+			    </div>
+			    <div>
+		    		<span id="modal-titles">Choreographers in Show</span>
+			    	<textarea type="textarea" rows="7" class="form-control" readonly="readonly">{{emailsInShow}}</textarea>
+			    </div>
+		    </div>
+		  </div>
+		</div>
+		
+
+		<div class="list-group" id="choreonames">
+			<div ng-repeat="n in Names">
+		  		<a href ng-click="getChoreoInfo(n.get('Name'))" class="list-group-item">{{n.get('Name')}}<span ng-style="n.get('inShow')=='true' && {'color': '#854DC9'} || n.get('inShow')=='true' && {'color': 'blue'}" class="glyphicon glyphicon-ok"></span></a>
+		  	</div>
+		</div>
+		<div class="choreoinfo">
+            <p id="infosection" ng-init="elements='Select a Choreographer to view their information.'">{{elements}}</p>
+		</div>
+		<button ng-click="addToShow()" type="button" class="btn btn-default btn-md" id="add-choreo">
+			{{button}}
+		</button>
+	</div>
+
+
+	<div id="graph-area">
+		<div class="panel panel-default">
+		  
+
+		  <div class="panel-body">
+		    <div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Total Choreographers in Show</h3>
+			  </div>
+			  <div class="panel-body">
+			  	<div id="num-choreos">{{Choreos}}</div>
+			  </div>
+			</div>
+		  </div>
+
+			<div class="panel-body">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Styles of Choreography in Show</h3>
+					</div>
+					<div class="panel-body">
+						<div id="chartA" google-chart chart="chartA"style="padding:10px"></div>
+					</div>
+				</div>
+			</div>
+
+		
+	</div>
+</div>
+</div>
+</div>
+
+</html>

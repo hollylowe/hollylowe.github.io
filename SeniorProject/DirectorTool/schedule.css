@@ -1,0 +1,219 @@
+.list-group{
+	float: left;
+	width: 40%;
+	height: 610px; 
+	background-color: white;
+	overflow: auto;
+}
+
+#list-title {
+	/*text-align: center;*/
+	background-color: #854DC9;
+	padding: 1px; 
+
+}
+#list-title h3 {
+	margin-left: 2%;
+	color: white; 
+}
+#list-title span {
+	float: right;
+	margin-right: 2%;
+}
+
+#search {
+	width: 100%; 
+}
+
+.choreolist {
+	width: 48vw; 
+	position:relative; 
+/*	background-color: #DEE0DF;
+*/	height: 80vh; 
+	margin:0 15px 0 20px;
+}
+
+.choreoinfo {
+	background-color: #D8D5DB;
+	/*display: table;
+	max-height: 200px;
+	width: 10px;
+	float: left;
+	text-align: center;
+	
+	/**overflow:auto;*/
+	min-height: 610px;
+	max-height: 610px;
+	text-align: left;
+	padding: 0 20px 0 20px;
+	overflow: auto;
+
+}
+
+/*.glyphicon {
+	float: right;
+	color:#DEE0DF;
+  	opacity:0.7;
+}
+*/
+
+
+#add-choreo {
+	width: 30vw;
+	padding: 2%;
+	min-height: 50px; 
+}
+
+#infosection {
+	white-space: pre-line;
+	margin: 20px 0 20px 0;
+	background: #854DC9;
+	padding: 18px;
+	color: white;
+	min-height: 116px; 
+}
+
+#dancerList {
+	/*width: 375px; */
+	/*margin-left: 715px; */
+}
+
+#myKey {
+	width: 250px; 
+	/*margin-left: 815px; */
+}
+.my-handle {
+    cursor: move;
+    cursor: -webkit-grabbing;
+    list-style-type: none;
+}
+
+#listWithHandle {
+	list-style-type: none;
+	list-style-position:inside;
+    margin:0;
+    padding:0;
+}
+
+#foo, #qux {
+	list-style-type: none;
+	list-style-position:inside;
+    margin:0;
+    padding:0;
+}
+#timeitem {
+	background-color: #DEE0DF; 
+	padding: 10px;
+	margin-bottom: 2px;
+}
+
+.good-match{
+	background-color: red; 
+	color: red;
+}
+
+#holderitem {
+	background-color: white; 
+	padding: 2px;
+}
+#dancerBadge {
+	margin-right: 10px;
+}
+#dancerInfoIcon {
+	margin-right: 10px; 
+}
+
+.glyphicon {
+	color: #777; 
+	opacity: 1; 
+}
+
+#directions1 {
+	margin-left: 15px;
+  	margin-top: 15px;
+ 	margin-bottom: 0px;
+ 	color: white;
+}
+
+#directions2 {
+	margin-left: 15px;
+	color: white;
+}
+
+#more-info-dancer {
+	background: none;
+	border: none;
+	margin-right: 10px;
+	padding: 0;
+	
+}
+
+#more-info-dancer:focus {
+	outline: none;
+	border-radius: 28px; 
+	box-shadow: 0 0 0pt 2pt #854DC9; 
+}
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 20px 0 20px;
+  border-bottom: 1px solid #eee;
+  margin-left: 2%;
+
+}
+#choreoBadge {
+	background-color: gray;
+  float: right;
+}
+
+#one {
+	background-color: #47E5BC;
+	width: 216px;
+	height: 40px;
+	margin-right: auto; 
+	margin-left: auto;
+	margin-bottom: 2px;
+	text-align: center;
+  	line-height: 40px;
+  	font-size: 10pt;
+}
+#two {
+	background-color: #3993DD;
+	width: 216px;
+	height: 40px;
+	margin-right: auto; 
+	margin-left: auto;
+	margin-bottom: 2px;
+	text-align: center;
+  	line-height: 40px;
+  	font-size: 10pt;
+}
+#three {
+	background-color: #D8F793;
+	width: 216px;
+	height: 40px;
+	margin-right: auto; 
+	margin-left: auto;
+	margin-bottom: 2px;
+	text-align: center;
+  	line-height: 40px;
+  	font-size: 10pt;
+}
+
+#dancerListBody {
+	min-height: 625px
+}
+
+#scheduleBut1, #scheduleBut2{
+	width: 165pt; 
+	padding: 20px;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+.list-group{
+	float: left;
+	width: 40%;
+	height: 562px; 
+	background-color: white;
+	overflow: auto;
+}
+
+#list-title {
+	/*text-align: center;*/
+	background-color: #854DC9;
+	padding: 1px; 
+
+}
+#list-title h3 {
+	margin-left: 2%;
+	color: white; 
+}
+#list-title span {
+	float: right;
+	margin-right: 2%;
+}
+
+#search {
+	width: 100%; 
+}
+
+.choreolist {
+	width: 50vw; 
+	position:relative; 
+/*	background-color: #DEE0DF;
+*/	height: 80vh; 
+	margin:0 15px 0 20px;
+}
+
+.choreoinfo {
+	background-color: #D8D5DB;
+	/*display: table;
+	max-height: 200px;
+	width: 10px;
+	float: left;
+	text-align: center;
+	
+	/**overflow:auto;*/
+	min-height: 512px;
+	max-height: 512px;
+	text-align: left;
+	padding: 0 20px 0 20px;
+	overflow: auto;
+	white-space: pre-line;
+}
+
+.glyphicon {
+	float: right;
+	color:#DEE0DF;
+  	opacity:0.7;
+}
+
+.glyphicon:active {
+	color: white;
+}
+
+#add-choreo {
+	width: 30vw;
+	padding: 2%;
+	min-height: 50px; 
+}
+
+#infosection {
+	margin: 0 0 0 0;
+}
+
+
+

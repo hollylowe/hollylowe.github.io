@@ -1,0 +1,52 @@
+/* Styles go here */
+
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.navbar-default .navbar-brand {
+    /*color: #f0ad4e;*/
+	color: #854DC9 !important; 
+}
+
+.todo {
+	/*top: 10px;*/
+	/*display: inline-block;*/
+	margin: 0 10px 0 10px;
+	width: 295px;
+	background-color: #DEE0DF;
+	float: left;
+}
+.todo h3 {
+	background-color: #854DC9; 
+	text-align: center; 
+	padding: 8px;
+	color: white; 
+	margin-top: 0;
+}
+.list-contents {
+	margin: 10px;
+}
+.clear-but {
+	width: 18vw; 
+	margin: 5px; 
+}
+
+.cal {
+	/*margin: 0 20px 0 20px; */
+	padding: 20px; 
+	display: inline-block;
+	background-color:  #DEE0DF; 
+
+}
+
+
+
+
+
+
+
+
+
+

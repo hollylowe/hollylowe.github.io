@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dancerForm">
+<head>
+	<meta charset="utf-8">
+	<title>Choreographer Form</title>
+	<script>
+	  document.write('<base href="' + document.location + '" />');
+	</script>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+	<script src="Sortable.js"></script>
+	<script src="sweetalert.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="sweetalert.css">
+	<link rel="stylesheet" href="style.css">
+
+
+</head>
+ <nav class="navbar navbar-default" ng-controller="NavCtrl">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Spring Show Choreographers</a>
+    </div>
+    <div>
+	    <ul class="nav navbar-nav">
+	      <li ng-class="navClass('proposal')"><a href='' ng-click="loadProposal()">Proposal Form</a></li>
+	      <li ng-class="navClass('submit')"><a href='' ng-click="loadSubmit()">Submit Dancers</a></li>
+	    </ul>
+  	</div>
+  </div>
+</nav>
+
+<body >
+  <div ng-view></div>
+  
+</body>
+<script src="script.js"></script>
+</html>

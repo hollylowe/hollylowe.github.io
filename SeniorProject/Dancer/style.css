@@ -1,0 +1,49 @@
+#submitbutton {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+#first {
+	margin: 0 8px 0 0;
+}
+
+#firstgroup {
+	margin-left: -18px;
+	margin-right: 18px;
+}
+
+#firstlabel {
+	margin-left: 18px; 
+	margin-bottom: 4px; 
+}
+
+#firstform {
+	color: green; 
+}
+
+#foo, #qux {
+	list-style-type: none;
+	list-style-position:inside;
+    margin:0;
+    padding:0;
+}
+
+#timeitem {
+	background-color: #DEE0DF; 
+	padding: 10px;
+	margin-bottom: 2px;
+}
+
+#holderitem {
+	background-color: white; 
+	padding: 2px;
+}
+.my-handle {
+    cursor: move;
+    cursor: -webkit-grabbing;
+    list-style-type: none;
+}
+.glyphicon {
+	color: #854DC9;
+	margin-right: 5px;
+}

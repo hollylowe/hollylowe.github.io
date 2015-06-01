@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+<meta charset="utf-8">
+<title>Spring Show Tool</title>
+<script>
+  document.write('<base href="' + document.location + '" />');
+</script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="ng-google-chart.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.13.0.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+ 
+
+
+<nav class="navbar navbar-default" ng-controller="NavCtrl">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Spring Show</a>
+    </div>
+    <div>
+	    <ul class="nav navbar-nav">
+	      <li ng-class="navClass('home')"><a href='' ng-click="loadHome()">Home</a></li>
+	      <li ng-class="navClass('choreo')"><a href='' ng-click="loadChoreo()">Choreographers</a></li>
+	      <li ng-class="navClass('dancers')"><a href='' ng-click="loadDancers()">Dancers</a></li>
+	      <li ng-class="navClass('auditions')"><a href='' ng-click="loadAuditions()">Auditions</a></li>
+	      <li ng-class="navClass('schedule')"><a href='' ng-click="loadSchedule()">Schedule</a></li>
+	    </ul>
+  	</div>
+  </div>
+</nav>
+
+<body >
+  <div ng-view></div>
+
+
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="schedule.css">
+    	<script src="Sortable.js"></script>
+
+    
+  </head>
+
+
+			 
+<div ng-controller="scheduleCtrl">
+	<div class="page-header">
+  <h2>Schedule Cast<small> </br>Click on a choreographer to view their information </br>Drag matching dancers from the "All Dancers" pane to add them to a dance</small></h2>
+</div>
+
+<div class="row">
+	<div class="col-md-6">
+		<div class="choreolist" id="list-tool">
+			<div id="list-title">
+				<h3>Choreographers</h3>
+			</div>
+
+			<div class="list-group" id="choreonames">
+				<div ng-repeat="n in Names">
+			  		<a href ng-click="getChoreoInfo(n.get('Name'))" class="list-group-item">{{n.get('Name')}}</a>
+			  	</div>
+
+
+			</div>
+			<div class="choreoinfo">
+	            <p id="infosection" ng-init="elements='Select a Choreographer to view their information.'">{{elements}}</p>
+				<div class="panel panel-default"  id="alltimes">
+				  <div class="panel-heading">Dancers<span class="badge" id="choreoBadge">{{choreoBadge}}</span></div>
+				  	<div class="panel-body">
+						<ul id="foo">
+							<li id="holderitem"></li>
+							<!-- <li ng-repeat="d in dances" id="timeitem">
+
+								<span class="my-handle">
+									<span class="glyphicon glyphicon-menu-hamburger">
+									</span>
+								</span>{{d}}
+							</li> -->
+
+
+								<li ng-repeat="d in dances" id="timeitem" ng-style="((isMatch(d.get('dancerId'), d.get('times')) == 4) && {'background-color': '#47E5BC'}) || ((isMatch(d.get('dancerId'), d.get('times')) == 3) && {'background-color': '#3993DD'})  || ((isMatch(d.get('dancerId'), d.get('times')) == 2)
+								&& {'background-color': '#D8F793'})">
+								<span class="badge" id="dancerBadge">{{d.get('assignedDances').length}}</span>
+								<span class="my-handle">
+
+									<span class="glyphicon glyphicon-menu-hamburger">
+									</span>
+								</span>
+								<button type="button" id="more-info-dancer" class="glyphicon glyphicon-info-sign" data-toggle="collapse" data-target="#demo{{d.get('dancerId')}}"></button>
+
+								<!-- <span class="glyphicon glyphicon-info-sign" id="dancerInfoIcon" ng-click="getDraggableInfo(ad)"></span> -->
+								{{d.get('DancerName')}}
+								<div id="demo{{d.get('dancerId')}}" class="collapse"></br><b>Dance Experience:</b> {{d.get('experience')}} years</br></br>
+									<b>Style Experience:</b></br>
+									Pointe Ballet: {{d.get('pointe')}} </br>
+									Hip Hop: {{d.get('hipHop')}} </br>
+									Tap: {{d.get('tap')}}</br>
+									Contemporary: {{d.get('contemporary')}}</br>
+									Ballet: {{d.get('ballet')}}</br>
+									African: {{d.get('african')}}</br>
+									Modern: {{d.get('modern')}}</br>
+									Bollywood: {{d.get('bollywood')}}</br>
+					              Breakdance: {{d.get('breakdance')}}</br></div>
+								<span>{{d.hiddenInfo}}</span>
+								
+							</li>
+
+
+
+
+
+					  	</ul>				 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+ 
+
+	<!-- <accordion>
+    <accordion-group is-open="status.open">
+        <accordion-heading>
+            I can have markup, too! <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+        </accordion-heading>
+        This is just some content to illustrate fancy headings.
+    </accordion-group>
+  </accordion> -->
+  <div class="col-md-3">
+	<div id="dancerList">
+		<div class=".container" id="times">		
+			<div class="panel panel-default" id="chosentimes">
+			  <div class="panel-heading">All Dancers</div>
+			  	<div class="panel-body" id="dancerListBody">
+				  	<ul id="qux">
+				   		<li id="holderitem"></li>
+						<!-- <li ng-repeat="ad in allDancers" id="timeitem" ng-style="ad.get('DancerName')=='Holly Lowe' && {'background-color': '#854DC9'} || n.get('inShow')=='true' && {'color': 'blue'}">  -->
+						<li ng-repeat="ad in allDancers" id="timeitem" ng-style="((isMatch(ad.get('dancerId'), ad.get('times')) == 4) && {'background-color': '#47E5BC'}) || ((isMatch(ad.get('dancerId'), ad.get('times')) == 3) && {'background-color': '#3993DD'})  || ((isMatch(ad.get('dancerId'), ad.get('times')) == 2) && {'background-color': '#D8F793'})"> 
+							
+							<span class="badge" id="dancerBadge">{{ad.get('assignedDances').length}}</span>
+
+							<span class="my-handle">
+
+								<span class="glyphicon glyphicon-menu-hamburger">
+								</span>
+							</span>
+							<button type="button" id="more-info-dancer" class="glyphicon glyphicon-info-sign" data-toggle="collapse" data-target="#demo{{ad.get('dancerId')}}"></button>
+
+							<!-- <span class="glyphicon glyphicon-info-sign" id="dancerInfoIcon" ng-click="getDraggableInfo(ad)"></span> -->
+							{{ad.get('DancerName')}}
+							<div id="demo{{ad.get('dancerId')}}" class="collapse"></br><b>Dance Experience:</b> {{ad.get('experience')}} years</br></br>
+								<b>Style Experience:</b></br>
+								Pointe Ballet: {{ad.get('pointe')}} </br>
+								Hip Hop: {{ad.get('hipHop')}} </br>
+								Tap: {{ad.get('tap')}}</br>
+								Contemporary: {{ad.get('contemporary')}}</br>
+								Ballet: {{ad.get('ballet')}}</br>
+								African: {{ad.get('african')}}</br>
+								Modern: {{ad.get('modern')}}</br>
+								Bollywood: {{ad.get('bollywood')}}</br>
+				              Breakdance: {{ad.get('breakdance')}}</br></div>
+							<span>{{ad.hiddenInfo}}</span>
+							
+						</li>
+				  	</ul> 
+				</div>
+			</div>
+			</div>
+	  	</div>
+</div>
+<div class="col-md-2">
+	  	<div id="myKey">
+			<div class=".container" id="times">		
+				<div class="panel panel-default" id="chosentimes">
+				  
+				  	<div class="panel-body">
+				  		<div id="one">100% Match!</div>
+				  		<div id="two">Dancer Selected Choreographer</div>
+				  		<div id="three">Choreographer Selected Dancer</div>
+				  	</div>
+				
+				</div>
+			</div>
+
+			<div class=".container" id="times">		
+				<div class="panel panel-default" id="chosentimes">
+				  
+				  	<div class="panel-body">
+<!-- 				  		<a id="scheduleBut1" class="btn btn-default btn-lg" role="button">Check that all dancers</br>have been placed</a>
+ -->				  		<a id="scheduleBut2" class="btn btn-default btn-lg" ng-click="finalCastList()"role="button">Download Final</br>Cast List</a>
+				  	</div>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+</div>
+</html>
