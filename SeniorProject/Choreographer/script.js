@@ -98,7 +98,7 @@ app.controller('submitDancersCtrl', function($scope, $compile){
         var ChoreoForm = Parse.Object.extend("ChoreoForm");
         var query = new Parse.Query(ChoreoForm);
 
-        var arr = $('dancers').val().split(',');
+        var arr = $('#dancers').val().split(',');
 
         query.equalTo("Name", $('#choreoName').val());
         query.find({
