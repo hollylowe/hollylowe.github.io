@@ -273,10 +273,12 @@ app.controller('ChoreoCtrl2', function($scope, $compile, $timeout) {
         // names[i] = object.get('Name');
         names[i] = object; 
         emails += object.get('Name') + " <" + object.get('Email') + ">; ";
+        object.save('Cid', "" + i);
+        console.log("CID SHOULD BE updated!")
 
         if (object.get('inShow') == "true"){
           emailsInShow += object.get('Name') + " <" + object.get('Email') + ">; ";
-          object.save('Cid', i);
+
         }
       }
 
