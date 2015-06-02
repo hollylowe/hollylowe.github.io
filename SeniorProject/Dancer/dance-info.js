@@ -89,6 +89,7 @@ app.controller('submitCtrl', function($scope, $compile) {
                           assignedDances: []
                           // inShow: "false"
                            }).then(function(object) {
+                            times: choreoList.toString();
                             //console.log($('#qux #timeitem').text());
                            	// console.log($('#college').val());
                            	// console.log($('#grade').val());
